@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1e9" />
+    <title>Atelier — Learn with intention</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.5/plyr.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#/" aria-label="Atelier home"
+        >ATELIER<span> / SCHOOL</span></a
+      >
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#/courses">Courses</a>
+        <a href="#/my-learning">My learning</a>
+      </nav>
+      <div class="header-tools">
+        <span class="user-mark" id="user-mark">R</span>
+        <button
+          class="text-button"
+          id="reset-demo"
+          type="button"
+          title="Clear saved demo progress"
+        >
+          Reset demo
+        </button>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <section class="loading-state"><p>Preparing your classroom…</p></section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#/">ATELIER<span> / SCHOOL</span></a>
+      <p>Independent learning for people who care about their craft.</p>
+      <span>DEMO PLATFORM · 2026</span>
+    </footer>
+
+    <aside
+      class="cookie-notice"
+      id="cookie-notice"
+      hidden
+      aria-label="Cookie notice"
+    >
+      <p>
+        <strong>A small note about cookies.</strong><br />We use a local
+        preference cookie to remember this demo on this browser. Learning
+        progress is stored in localStorage.
+      </p>
+      <button class="button button-dark" id="accept-cookies" type="button">
+        Understood
+      </button>
+    </aside>
+    <script src="https://cdn.plyr.io/3.8.5/plyr.js"></script>
+    <script src="./courses.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
